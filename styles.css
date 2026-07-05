@@ -195,6 +195,21 @@ h3 {
   font-size: clamp(1.08rem, 2vw, 1.3rem);
 }
 
+.hero-summary a {
+  color: var(--teal);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgba(38, 117, 106, 0.35);
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.18em;
+}
+
+.hero-summary a:hover,
+.hero-summary a:focus-visible {
+  color: var(--ink);
+  text-decoration-color: var(--coral);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -449,9 +464,14 @@ h3 {
 .announcement-list,
 .resource-grid,
 .assignment-grid,
-.module-grid {
+.module-grid,
+.staff-grid {
   display: grid;
   gap: 1rem;
+}
+
+.staff-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .module-grid {
@@ -464,6 +484,69 @@ h3 {
 
 .resource-group > h3 {
   margin-bottom: 1rem;
+}
+
+.staff-card {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 1.25rem;
+}
+
+.staff-photo {
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 1px solid rgba(24, 33, 31, 0.1);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.staff-role {
+  display: block;
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.staff-card h3 {
+  margin-top: 0.55rem;
+  font-size: 1.3rem;
+}
+
+.staff-details {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.2rem 0 0;
+}
+
+.staff-details div {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.staff-details dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.staff-details dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.staff-details a {
+  color: var(--teal);
+  overflow-wrap: anywhere;
 }
 
 .module-card {
@@ -690,7 +773,8 @@ h3 {
   .announcement-list,
   .assignment-grid,
   .resource-grid,
-  .module-grid {
+  .module-grid,
+  .staff-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -727,7 +811,8 @@ h3 {
   .announcement-list,
   .assignment-grid,
   .resource-grid,
-  .module-grid {
+  .module-grid,
+  .staff-grid {
     grid-template-columns: 1fr;
   }
 
