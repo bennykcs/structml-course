@@ -497,6 +497,32 @@ h3 {
   font-weight: 800;
 }
 
+.module-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.module-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.25rem;
+  border: 1px solid rgba(38, 117, 106, 0.34);
+  border-radius: 8px;
+  color: var(--teal);
+  font-size: 0.9rem;
+  font-weight: 900;
+  padding: 0.45rem 0.7rem;
+}
+
+.module-actions a:hover,
+.module-actions a:focus-visible {
+  background: var(--teal);
+  color: #fffaf1;
+}
+
 .module-card:hover,
 .module-card:focus-visible {
   border-color: rgba(38, 117, 106, 0.42);
