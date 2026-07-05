@@ -13,34 +13,42 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Course home">
-        <span class="brand-mark" aria-hidden="true">ML</span>
         <span>
           <span class="brand-title">Structured ML</span>
-          <span class="brand-subtitle">Course Website</span>
+          <span class="brand-subtitle">Technion Computer Science</span>
         </span>
       </a>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#overview">Overview</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#assignments">Assignments</a>
-        <a href="#resources">Resources</a>
-      </nav>
+      <div class="header-right">
+        <a class="affiliation" href="https://www.cs.technion.ac.il/" aria-label="Technion Taub Faculty of Computer Science">
+          <img
+            src="assets/technion-taub-cs-logo.png"
+            alt="Technion - The Henry and Marilyn Taub Faculty of Computer Science"
+          >
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#overview">Overview</a>
+          <a href="#resources">Resources</a>
+        </nav>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="course-title">
         <div class="hero-copy">
-          <p class="eyebrow">Graduate course - Spring 2027</p>
-          <h1 id="course-title">Selected Topics on Deep Learning over Structured Data</h1>
+        <!--<p class="eyebrow">Technion Computer Science - Spring 2027</p>-->
+          <h1 id="course-title">
+            <span class="title-kicker">Selected Topics on</span>
+            <span class="title-main">Deep Learning over Structured Data</span>
+          </h1>
           <p class="hero-summary">
-            A clean course site skeleton for lectures, tutorials, assignments,
-            project information, and learning resources.
+            A clean course site skeleton for lectures, tutorials, course
+            information, and learning resources.
           </p>
 
           <div class="hero-actions" aria-label="Course quick links">
-            <a class="button primary" href="#schedule">View Schedule</a>
-            <a class="button secondary" href="#assignments">Assignments</a>
+            <a class="button primary" href="#resources">View Resources</a>
           </div>
         </div>
 
@@ -87,13 +95,23 @@
       <section id="overview" class="section two-column">
         <div>
           <p class="section-label">Overview</p>
-          <h2>Course At A Glance</h2>
+          <h2>Course Overview</h2>
         </div>
         <div class="section-body">
           <p>
-            Replace this paragraph with a short course description. Keep it to
-            one or two paragraphs so students can quickly understand the scope,
-            prerequisites, format, and expectations.
+            This course studies machine learning methods for structured data,
+            with an emphasis on relational databases, tables, and graphs. We
+            will examine how these data representations are connected, and how
+            learning methods can move between database-specific, schema-aware,
+            and cross-schema settings.
+          </p>
+          <p>
+            Topics include feature engineering and automated feature generation,
+            vector embeddings, graph neural networks, transformer-based
+            foundation models, and explainability methods for model predictions.
+            Tutorial sessions will focus on implementing the covered methods
+            using modern libraries for machine learning, deep learning, and
+            graph processing.
           </p>
           <div class="tag-list" aria-label="Topic tags">
             <span>Tabular ML</span>
@@ -106,8 +124,10 @@
 
       <section class="section">
         <div class="section-heading">
-          <p class="section-label">Updates</p>
-          <h2>Announcements</h2>
+          <div>
+            <p class="section-label">Updates</p>
+            <h2>Announcements</h2>
+          </div>
         </div>
 
         <div class="announcement-list">
@@ -118,87 +138,86 @@
           </article>
           <article class="announcement-card">
             <time datetime="2027-03-08">Mar 8</time>
-            <h3>Assignment 1 released</h3>
-            <p>Use this space for deadline reminders and short course updates.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="schedule" class="section">
-        <div class="section-heading">
-          <p class="section-label">Calendar</p>
-          <h2>Schedule</h2>
-        </div>
-
-        <div class="schedule">
-          <div class="schedule-row">
-            <span class="week">Week 1</span>
-            <span class="topic">Introduction and course logistics</span>
-            <span class="material">Slides - Reading</span>
-          </div>
-          <div class="schedule-row">
-            <span class="week">Week 2</span>
-            <span class="topic">Topic title placeholder</span>
-            <span class="material">Slides - Tutorial</span>
-          </div>
-          <div class="schedule-row">
-            <span class="week">Week 3</span>
-            <span class="topic">Topic title placeholder</span>
-            <span class="material">Slides - Code</span>
-          </div>
-          <div class="schedule-row">
-            <span class="week">Week 4</span>
-            <span class="topic">Topic title placeholder</span>
-            <span class="material">Slides - Reading</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="assignments" class="section split-band">
-        <div>
-          <p class="section-label">Coursework</p>
-          <h2>Assignments And Project</h2>
-          <p>
-            Add programming assignments, submission links, project milestones,
-            grading policy, and late-day rules.
-          </p>
-        </div>
-
-        <div class="assignment-grid">
-          <article class="mini-card">
-            <h3>Assignment 1</h3>
-            <p>Short description and due date.</p>
-          </article>
-          <article class="mini-card">
-            <h3>Assignment 2</h3>
-            <p>Short description and due date.</p>
-          </article>
-          <article class="mini-card">
-            <h3>Final Project</h3>
-            <p>Proposal, checkpoint, and presentation.</p>
+            <h3>Course materials coming soon</h3>
+            <p>Use this space for reminders, links, and short course updates.</p>
           </article>
         </div>
       </section>
 
       <section id="resources" class="section">
         <div class="section-heading">
-          <p class="section-label">Materials</p>
-          <h2>Resources</h2>
+          <div>
+            <p class="section-label">Materials</p>
+            <h2>Resources</h2>
+          </div>
+          <p class="section-intro">
+            Teaching materials for the course. Videos and additional materials
+            can be added here later.
+          </p>
         </div>
 
-        <div class="resource-grid">
-          <a class="resource-card" href="#">
-            <span>Slides</span>
-            <strong>Lecture deck archive</strong>
-          </a>
-          <a class="resource-card" href="#">
-            <span>Code</span>
-            <strong>Starter notebooks</strong>
-          </a>
-          <a class="resource-card" href="#">
-            <span>Reading</span>
-            <strong>Papers and book chapters</strong>
-          </a>
+        <div class="resource-group">
+          <h3>Course Information</h3>
+          <div class="resource-grid">
+            <a class="resource-card featured-resource" href="pdfs/intro.pdf" target="_blank" rel="noopener">
+              <span>Introduction</span>
+              <strong>Course overview and regulations</strong>
+            </a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>Lecture Modules</h3>
+          <div class="module-grid">
+            <a class="module-card" href="pdfs/module1.pdf" target="_blank" rel="noopener">
+              <span class="module-number">Module 1</span>
+              <h3>Fundamental Concepts in Structured ML</h3>
+              <p>101 pages</p>
+            </a>
+            <a class="module-card" href="pdfs/module2.pdf" target="_blank" rel="noopener">
+              <span class="module-number">Module 2</span>
+              <h3>Structured Learning via Tabular Learning</h3>
+              <p>100 pages</p>
+            </a>
+            <a class="module-card" href="pdfs/module3.pdf" target="_blank" rel="noopener">
+              <span class="module-number">Module 3</span>
+              <h3>Node and Tuple Embedding</h3>
+              <p>87 pages</p>
+            </a>
+            <a class="module-card" href="pdfs/module4.pdf" target="_blank" rel="noopener">
+              <span class="module-number">Module 4</span>
+              <h3>Crash Course on Deep Learning</h3>
+              <p>73 pages</p>
+            </a>
+            <a class="module-card" href="pdfs/module5.pdf" target="_blank" rel="noopener">
+              <span class="module-number">Module 5</span>
+              <h3>Message-Passing Graph Neural Networks</h3>
+              <p>98 pages</p>
+            </a>
+            <a class="module-card" href="pdfs/module6.pdf" target="_blank" rel="noopener">
+              <span class="module-number">Module 6</span>
+              <h3>Relational Foundation Models</h3>
+              <p>98 pages</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="resource-group">
+          <h3>More Resources</h3>
+          <div class="resource-grid">
+            <a class="resource-card" href="#">
+              <span>Videos</span>
+              <strong>Lecture recordings</strong>
+            </a>
+            <a class="resource-card" href="#">
+              <span>Code</span>
+              <strong>Starter notebooks</strong>
+            </a>
+            <a class="resource-card" href="#">
+              <span>Reading</span>
+              <strong>Papers and book chapters</strong>
+            </a>
+          </div>
         </div>
       </section>
     </main>
