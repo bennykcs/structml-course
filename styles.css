@@ -703,10 +703,83 @@ h3 {
   display: block;
 }
 
+.reading-card {
+  grid-column: span 2;
+}
+
 .featured-resource {
   background:
     linear-gradient(135deg, rgba(239, 189, 87, 0.2), transparent 14rem),
     rgba(255, 255, 255, 0.82);
+}
+
+.reading-list {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reading-list li {
+  border-top: 1px solid rgba(216, 223, 216, 0.8);
+  padding-top: 0.85rem;
+}
+
+.reading-list cite {
+  display: block;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.reading-list cite a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(38, 117, 106, 0.32);
+  text-decoration-thickness: 0.11em;
+  text-underline-offset: 0.18em;
+}
+
+.reading-list cite a:hover,
+.reading-list cite a:focus-visible {
+  color: var(--teal);
+  text-decoration-color: var(--teal);
+}
+
+.reading-list small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.reading-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.55rem;
+}
+
+.reading-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  border: 1px solid rgba(38, 117, 106, 0.28);
+  border-radius: 8px;
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 900;
+  padding: 0.35rem 0.6rem;
+}
+
+.reading-links a:hover,
+.reading-links a:focus-visible {
+  background: var(--teal);
+  color: #fffaf1;
 }
 
 .resource-card strong {
@@ -715,8 +788,8 @@ h3 {
   font-size: 1.08rem;
 }
 
-.resource-card:hover,
-.resource-card:focus-visible {
+a.resource-card:hover,
+a.resource-card:focus-visible {
   border-color: rgba(38, 117, 106, 0.42);
   box-shadow: 0 12px 32px rgba(24, 33, 31, 0.08);
   transform: translateY(-1px);
@@ -789,6 +862,10 @@ h3 {
     grid-template-columns: 1fr;
     gap: 0.3rem;
   }
+
+  .reading-card {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 560px) {
@@ -821,6 +898,10 @@ h3 {
   .module-grid,
   .staff-grid {
     grid-template-columns: 1fr;
+  }
+
+  .reading-card {
+    grid-column: span 1;
   }
 
   .table-card {
