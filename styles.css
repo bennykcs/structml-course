@@ -485,6 +485,12 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
 .resource-group + .resource-group {
   margin-top: 2rem;
 }
@@ -618,6 +624,50 @@ h3 {
   border-color: rgba(38, 117, 106, 0.42);
   box-shadow: 0 12px 32px rgba(24, 33, 31, 0.08);
   transform: translateY(-1px);
+}
+
+.tutorial-card {
+  display: grid;
+  gap: 0.45rem;
+  align-content: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 1rem;
+}
+
+.tutorial-card span {
+  color: var(--coral);
+  font-size: 0.74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.tutorial-card h3 {
+  min-height: 2.8rem;
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.35;
+}
+
+.tutorial-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.tutorial-card a {
+  width: fit-content;
+  margin-top: 0.35rem;
+  border-bottom: 2px solid rgba(38, 117, 106, 0.28);
+  color: var(--teal);
+  font-weight: 900;
+}
+
+.tutorial-card a:hover,
+.tutorial-card a:focus-visible {
+  border-bottom-color: var(--teal);
 }
 
 .announcement-list {
@@ -854,6 +904,7 @@ a.resource-card:focus-visible {
   .assignment-grid,
   .resource-grid,
   .module-grid,
+  .tutorial-grid,
   .staff-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -896,6 +947,7 @@ a.resource-card:focus-visible {
   .assignment-grid,
   .resource-grid,
   .module-grid,
+  .tutorial-grid,
   .staff-grid {
     grid-template-columns: 1fr;
   }
