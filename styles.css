@@ -52,27 +52,6 @@ a {
   backdrop-filter: blur(18px);
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  justify-self: start;
-  min-width: 0;
-}
-
-.brand-title,
-.brand-subtitle {
-  display: block;
-}
-
-.brand-title {
-  font-weight: 800;
-}
-
-.brand-subtitle {
-  color: var(--muted);
-  font-size: 0.82rem;
-}
-
 .header-right {
   display: contents;
 }
@@ -956,10 +935,6 @@ a.resource-card:focus-visible {
   main,
   .site-footer {
     width: min(100% - 1rem, 1180px);
-  }
-
-  .brand-subtitle {
-    display: none;
   }
 
   .site-nav a {
