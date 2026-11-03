@@ -487,6 +487,10 @@ h3 {
   color: var(--muted);
 }
 
+.module-grid + .resource-note {
+  margin-top: 1rem;
+}
+
 .staff-card {
   display: grid;
   grid-template-columns: 4.5rem minmax(0, 1fr);
