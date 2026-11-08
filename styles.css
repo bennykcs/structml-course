@@ -684,6 +684,14 @@ h3 {
   color: #fffaf1;
 }
 
+.tutorial-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+
 .tutorial-card:hover,
 .tutorial-card:focus-within {
   border-color: rgba(207, 97, 75, 0.32);
